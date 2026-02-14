@@ -15,7 +15,7 @@
 
 ---
 
-### 🔥 GitHub Streak (FIXED USERNAME)
+### 🔥 GitHub Streak
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Vatsasarthak&theme=dark&hide_border=true" />
 </p>
