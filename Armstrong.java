@@ -1,8 +1,6 @@
 class Armstrong {
     public boolean Armstrong(int n) {
         int original = n;
-
-        // count digits
         int digits = String.valueOf(n).length();
 
         int sum = 0;
