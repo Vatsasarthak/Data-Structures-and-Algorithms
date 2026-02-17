@@ -1,4 +1,4 @@
-class Solution {
+class GCD {
     public int GCD(int n1, int n2) {
         while (n2 != 0) {
             int temp = n2;
