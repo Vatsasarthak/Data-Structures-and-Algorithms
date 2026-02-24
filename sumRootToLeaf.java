@@ -1,6 +1,4 @@
-public class Main {
-
-    // Definition for binary tree node
+public class sumRootToLeaf {
     static class TreeNode {
         int val;
         TreeNode left;
@@ -30,22 +28,6 @@ public class Main {
     }
 
     public static void main(String[] args) {
-
-        /*
-              Example Tree:
-                   1
-                  / \
-                 0   1
-                / \   \
-               0   1   1
-
-           Paths:
-           100 = 4
-           101 = 5
-           111 = 7
-
-           Output: 16
-        */
 
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(0);
