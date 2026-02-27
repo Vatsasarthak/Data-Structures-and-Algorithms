@@ -1,4 +1,4 @@
-class Solution {
+class BinaryStepsReduction{
     public int numSteps(String s) {
         int steps = 0;
         int carry = 0;
