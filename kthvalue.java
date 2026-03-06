@@ -1,4 +1,4 @@
-class Solution {
+class kthvalue {
     public char findKthBit(int n, int k) {
         if (n == 1) return '0';
         
