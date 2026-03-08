@@ -48,6 +48,7 @@
 - Recursion
 - Linked List
 - Searching & Sorting
+- Dynamic Programming
 
 ---
 
