@@ -6,7 +6,7 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=26&pause=1000&color=E3B04B&center=true&vCenter=true&width=650&lines=Daily+Java+DSA;One+Problem+Every+Day;Consistency+Over+Motivation+🚀" />
 </p>
 
-<h2 align="center">📘 Data Structures & Algorithms (Java)</h2>
+<h2 align="center">📘 Data Structures & Algorithms </h2>
 
 <p align="center">
   Daily practice of <b>Data Structures and Algorithms using Java</b>.<br/>
