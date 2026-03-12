@@ -29,6 +29,5 @@ public class SelectionSort {
         for (int val : arr) {
             System.out.print(val + " ");
         }
-        // Output: 11 12 22 25 64
     }
 }
