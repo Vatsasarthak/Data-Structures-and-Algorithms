@@ -1,18 +1,15 @@
 import java.util.Scanner;
 
-// Solution class to find the (r, c) element of Pascal's Triangle
-class Pascal {
+class triangrpascal {
 
-    // Function to compute binomial coefficient (nCr)
     public long findPascalElement(int r, int c) {
 
-        // Element is C(r-1, c-1)
+
         int n = r - 1;
         int k = c - 1;
 
         long result = 1;
 
-        // Compute C(n, k) using iterative formula
         for (int i = 0; i < k; i++) {
             result = result * (n - i);
             result = result / (i + 1);
@@ -22,7 +19,7 @@ class Pascal {
     }
 }
 
-// Main class
+
 public class Main {
 
     public static void main(String[] args) {
