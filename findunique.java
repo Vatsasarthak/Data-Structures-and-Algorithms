@@ -1,4 +1,4 @@
-class Solution {
+class findunique {
     public String findDifferentBinaryString(String[] nums) {
         int n = nums.length;
         char[] ans = new char[n];
