@@ -4,7 +4,7 @@ class Solution {
     }
     int Divisor(int[] nums,int threshold){
         int low =1;
-   int high = 0;
+        int high = 0;
         for (int num : nums) {
         high = Math.max(high, num);
             }
