@@ -3,7 +3,7 @@ class Solution {
         int idx = 0, n = s.length();
         int sign = 1;
         long res = 0;
-
+// solve one more time you are confused 
         while (idx < n && s.charAt(idx) == ' ') {
             idx++;
         }
