@@ -1,29 +1,28 @@
 class Solution {
     public boolean searchMatrix(int[][] matrix, int target) {
-        for(int i=0;i <matrix.length;i++){
-            if(matrix[i][0] <= target && target <= matrix[i][matrix[i].length -1]){
-          if(binarysearch( matrix[i] , target)){
-            return true;
-          }
-          }
-        }
-            return false;
-    }
-    boolean binarysearch(int[] row ,int target){
-        int low=0;
-        int high=row.length -1;
-        while(low <= high){
-            int mid= low + (high -low)/2;
-            if(row[mid]==target){
+        int n = matrix.length;
+        int m = matrix[0].length;
+        
+        int low = 0;
+        int high = n * m - 1;
+        
+        while (low <= high) {
+            int mid = low + (high - low) / 2;
+            
+            int row = mid / m;
+            int col = mid % m;
+            
+            if (matrix[row][col] == target) {
                 return true;
-            }
-            else if(row[mid] > target){
-                high = mid -1;
-            }
-            else{
+            } 
+            else if (matrix[row][col] > target) {
+                high = mid - 1;
+            } 
+            else {
                 low = mid + 1;
             }
         }
+        
         return false;
     }
 }
