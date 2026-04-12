@@ -19,14 +19,14 @@ public class Solution {
         ListNode fast = head;
 
         while (fast != null && fast.next != null) {
-            slow = slow.next;         
-            fast = fast.next.next;    
+            slow = slow.next;
+            fast = fast.next.next;
 
-            if (slow == fast) {        
+            if (slow == fast) {
                 return true;
             }
         }
 
-        return false; 
+        return false;
     }
 }
