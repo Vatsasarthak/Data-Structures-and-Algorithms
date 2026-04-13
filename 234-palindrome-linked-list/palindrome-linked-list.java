@@ -9,51 +9,52 @@
  * }
  */
 class Solution {
-    public boolean isPalindrome(ListNode head) {
-        if (head == null || head.next == null) {
-            return true;
-        }
 
-        ListNode Middle = Median(head);
-
-        ListNode second = reverse(Middle);
-
-        ListNode first = head;
-
-        while (second != null) {
-            if (first.val != second.val) {
-                return false;
-            }
-            first = first.next;
-            second = second.next;
-        }
-
-        return true;
-    }
-
-    ListNode Median(ListNode head) {
-        ListNode slow = head;
-        ListNode fast = head;
-
-        while (fast != null && fast.next != null) {
-            slow = slow.next;
-            fast = fast.next.next;
-        }
-
-        return slow;
-    }
-
-    ListNode reverse(ListNode head) {
+    // Reverse Linked List (iterative - better for LeetCode)
+    private ListNode reverse(ListNode head) {
         ListNode prev = null;
         ListNode curr = head;
 
         while (curr != null) {
-            ListNode next = curr.next;
+            ListNode nextTemp = curr.next;
             curr.next = prev;
             prev = curr;
-            curr = next;
+            curr = nextTemp;
         }
 
         return prev;
+    }
+
+    public boolean isPalindrome(ListNode head) {
+        if (head == null || head.next == null) return true;
+
+      
+        ListNode slow = head;
+        ListNode fast = head;
+
+        while (fast.next != null && fast.next.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+
+        
+        ListNode secondHalf = reverse(slow.next);
+
+        
+        ListNode firstHalf = head;
+        ListNode temp = secondHalf;
+
+        while (temp != null) {
+            if (firstHalf.val != temp.val) {
+                reverse(secondHalf); 
+                return false;
+            }
+            firstHalf = firstHalf.next;
+            temp = temp.next;
+        }
+
+        reverse(secondHalf);
+
+        return true;
     }
 }
