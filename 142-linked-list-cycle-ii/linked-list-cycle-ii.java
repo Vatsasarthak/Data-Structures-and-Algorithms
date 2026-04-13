@@ -1,4 +1,3 @@
-
 /**
  * Definition for singly-linked list.
  * class ListNode {
@@ -10,21 +9,34 @@
  *     }
  * }
  */
-import java.util.HashMap;
-
 public class Solution {
     public ListNode detectCycle(ListNode head) {
         if (head == null || head.next == null) {
             return null;
         }
-        HashMap<ListNode, Integer> check = new HashMap<>();
-        ListNode temp = head;
-        while (temp != null) {
-            if (check.containsKey(temp)) {
-                return temp;
+        ListNode meet = DetectLoop(head);
+        if (meet == null) {
+            return null;
+        } else {
+            ListNode slow = head;
+            ListNode fast = meet;
+            while (slow != fast) {
+                slow = slow.next;
+                fast = fast.next;
             }
-            check.put(temp, 1);
-            temp = temp.next;
+              return slow;
+        }
+    }
+
+    ListNode DetectLoop(ListNode head) {
+        ListNode slow = head;
+        ListNode fast = head;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+            if (slow == fast) {
+                return fast;
+            }
         }
         return null;
     }
