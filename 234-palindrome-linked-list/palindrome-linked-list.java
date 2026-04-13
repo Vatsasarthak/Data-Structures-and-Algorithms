@@ -10,7 +10,6 @@
  */
 class Solution {
 
-    // Reverse Linked List (iterative - better for LeetCode)
     private ListNode reverse(ListNode head) {
         ListNode prev = null;
         ListNode curr = head;
@@ -26,9 +25,9 @@ class Solution {
     }
 
     public boolean isPalindrome(ListNode head) {
-        if (head == null || head.next == null) return true;
+        if (head == null || head.next == null)
+            return true;
 
-      
         ListNode slow = head;
         ListNode fast = head;
 
@@ -37,16 +36,14 @@ class Solution {
             fast = fast.next.next;
         }
 
-        
         ListNode secondHalf = reverse(slow.next);
 
-        
         ListNode firstHalf = head;
         ListNode temp = secondHalf;
 
         while (temp != null) {
             if (firstHalf.val != temp.val) {
-                reverse(secondHalf); 
+                reverse(secondHalf);
                 return false;
             }
             firstHalf = firstHalf.next;
