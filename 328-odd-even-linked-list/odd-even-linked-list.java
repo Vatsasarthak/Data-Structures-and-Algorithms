@@ -10,11 +10,11 @@
  */
 class Solution {
     public ListNode oddEvenList(ListNode head) {
-        if (head == null) return null;
+        if (head == null)
+            return null;
 
         ArrayList<Integer> list = new ArrayList<>();
 
-  
         ListNode temp = head;
         while (temp != null) {
             list.add(temp.val);
@@ -35,7 +35,6 @@ class Solution {
             }
         }
 
-       
         temp = head;
         int i = 0;
         while (temp != null) {
