@@ -1,4 +1,3 @@
-
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -9,38 +8,61 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-import java.util.*;
-
 class Solution {
+
     public ListNode sortList(ListNode head) {
-        if (head == null)
-            return null;
+        // Base case
+        if (head == null || head.next == null)
+            return head;
 
-        int n = 0;
-        ListNode temp = head;
-        while (temp != null) {
-            n++;
+        // Find middle
+        ListNode middle = findMiddle(head);
+        ListNode right = middle.next;
+        middle.next = null; // break list
+
+        ListNode left = head;
+
+        // Recursively sort
+        left = sortList(left);
+        right = sortList(right);
+
+        // Merge sorted lists
+        return mergeTwoLists(left, right);
+    }
+
+    // Find middle of linked list
+    private ListNode findMiddle(ListNode head) {
+        ListNode slow = head;
+        ListNode fast = head.next; // IMPORTANT
+
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return slow;
+    }
+
+    // Merge two sorted lists
+    private ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+        ListNode dummy = new ListNode(-1);
+        ListNode temp = dummy;
+
+        while (list1 != null && list2 != null) {
+            if (list1.val < list2.val) {
+                temp.next = list1;
+                list1 = list1.next;
+            } else {
+                temp.next = list2;
+                list2 = list2.next;
+            }
             temp = temp.next;
         }
 
-        int[] arr = new int[n];
+        if (list1 != null)
+            temp.next = list1;
+        else
+            temp.next = list2;
 
-        temp = head;
-        int i = 0;
-        while (temp != null) {
-            arr[i++] = temp.val;
-            temp = temp.next;
-        }
-
-        Arrays.sort(arr);
-
-        temp = head;
-        i = 0;
-        while (temp != null) {
-            temp.val = arr[i++];
-            temp = temp.next;
-        }
-
-        return head;
+        return dummy.next;
     }
 }
