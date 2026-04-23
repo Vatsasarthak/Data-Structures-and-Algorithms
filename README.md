@@ -4,11 +4,11 @@ Automatically synced using **GFG Sync** Chrome Extension.
 
 ## Stats
 
-- **Total Solved:** 3
+- **Total Solved:** 4
 - **Current Streak:** 1 days
 
 ### Difficulty Breakdown
+- **Easy:** 2
 - **Unknown:** 2
-- **Easy:** 1
 
 ### Topic Breakdown
