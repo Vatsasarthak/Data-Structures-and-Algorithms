@@ -1,0 +1,20 @@
+/**
+ * Problem Name: GFG Problem
+ * Language: unknown
+ * Difficulty: Unknown
+ * 
+ * Given two integers, n and m. The task is to check the relation between n and m. Return "lesser" if n  m.
+ * 
+ * Examples :
+ * 
+ * 
+ * Input: n = 4, m = 8
+ * Output: lesser
+ * Explanation: 4  4 so print 'greater'.
+ * 
+ * Constraints:
+ * -109 <= m , n <= 109
+ * 
+ */
+
+// fallback: code extraction failed
