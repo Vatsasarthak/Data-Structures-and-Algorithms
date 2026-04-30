@@ -1,32 +1,32 @@
 class Solution {
     public int myAtoi(String s) {
-        int idx = 0, n = s.length();
+        int n = s.length();
+        int i = 0;
+
+        while (i < n && Character.isWhitespace(s.charAt(i))) {
+            i++;
+        }
+
         int sign = 1;
-        long res = 0;
-// solve one more time you are confused 
-        while (idx < n && s.charAt(idx) == ' ') {
-            idx++;
+        if (i < n && s.charAt(i) == '-') {
+            sign = -1;
+            i++;
+        } else if (i < n && s.charAt(i) == '+') {
+            i++;
         }
 
-        if (idx < n && (s.charAt(idx) == '+' || s.charAt(idx) == '-')) {
-            if (s.charAt(idx) == '-') {
-                sign = -1;
+        int curr = 0;
+        while (i < n && Character.isDigit(s.charAt(i))) {
+            int digit = s.charAt(i) - '0';
+
+            if (curr > (Integer.MAX_VALUE - digit) / 10) {
+                return sign == 1 ? Integer.MAX_VALUE : Integer.MIN_VALUE;
             }
-            idx++;
+
+            curr = curr * 10 + digit;
+            i++;
         }
 
-        while (idx < n && Character.isDigit(s.charAt(idx))) {
-            int digit = s.charAt(idx) - '0';
-            res = res * 10 + digit;
-
-            if (sign * res > Integer.MAX_VALUE)
-                return Integer.MAX_VALUE;
-            if (sign * res < Integer.MIN_VALUE)
-                return Integer.MIN_VALUE;
-
-            idx++;
-        }
-
-        return (int) (sign * res);
+        return sign * curr;
     }
 }
