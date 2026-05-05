@@ -1,3 +1,27 @@
+/*
+class Node {
+    int data;
+    Node next;
+    Node bottom;
+
+    Node(int x) {
+        data = x;
+        next = null;
+        bottom = null;
+    }
+}
+*/
+class Solution {
+    public Node flatten(Node root) {
+        // Base case: empty or single node with no bottom
+        if (root == null || (root.next == null && root.bottom == null)) {
+            return root;
+        }
+        
+        // Step 1: Recursively flatten the next (right) part
+        Node rightFlattened = flatten(root.next);
+        
+        // Step 2: Merge current bottom list with the flattened right part
         Node merged = mergeTwoLists(root, rightFlattened);
         
         // Step 3: Set next to null (flattened list uses bottom only)
@@ -13,25 +37,3 @@
         Node tail = dummy;
         
         while (a != null && b != null) {
-            if (a.data <= b.data) {
-                tail.bottom = a;
-                a = a.bottom;
-            } else {
-                tail.bottom = b;
-                b = b.bottom;
-            }
-            tail = tail.bottom;
-        }
-        
-        // Attach remaining nodes
-        if (a != null) {
-            tail.bottom = a;
-        }
-        if (b != null) {
-            tail.bottom = b;
-        }
-        
-        return dummy.bottom;
-    }
-}
-
