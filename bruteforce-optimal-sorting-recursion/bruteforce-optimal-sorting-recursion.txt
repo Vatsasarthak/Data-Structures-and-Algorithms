@@ -1,0 +1,37 @@
+        Node merged = mergeTwoLists(root, rightFlattened);
+        
+        // Step 3: Set next to null (flattened list uses bottom only)
+        root.next = null;
+        
+        return merged;
+    }
+    
+    // Helper: Merge two sorted linked lists (using bottom pointer)
+    private Node mergeTwoLists(Node a, Node b) {
+        // Use a dummy node to build result
+        Node dummy = new Node(0);
+        Node tail = dummy;
+        
+        while (a != null && b != null) {
+            if (a.data <= b.data) {
+                tail.bottom = a;
+                a = a.bottom;
+            } else {
+                tail.bottom = b;
+                b = b.bottom;
+            }
+            tail = tail.bottom;
+        }
+        
+        // Attach remaining nodes
+        if (a != null) {
+            tail.bottom = a;
+        }
+        if (b != null) {
+            tail.bottom = b;
+        }
+        
+        return dummy.bottom;
+    }
+}
+
