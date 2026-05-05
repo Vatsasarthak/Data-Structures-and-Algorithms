@@ -1,4 +1,10 @@
-next = null;
+int data;
+    Node next;
+    Node bottom;
+
+    Node(int x) {
+        data = x;
+        next = null;
         bottom = null;
     }
 }
@@ -31,9 +37,3 @@ class Solution {
         while (a != null && b != null) {
             if (a.data <= b.data) {
                 tail.bottom = a;
-                a = a.bottom;
-            } else {
-                tail.bottom = b;
-                b = b.bottom;
-            }
-            tail = tail.bottom;
