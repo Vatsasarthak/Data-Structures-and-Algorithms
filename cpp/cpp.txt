@@ -1,0 +1,36 @@
+Node next;
+    Node random;
+
+    Node(int x) {
+        data = x;
+        next = null;
+        random = null;
+    }
+}
+*/
+class Solution {
+    public Node cloneLinkedList(Node head) {
+        if (head == null) return null;
+
+        // Map to store original node -> cloned node mapping
+        Map<Node, Node> map = new HashMap<>();
+
+        // First pass: Create all new nodes
+        Node curr = head;
+        while (curr != null) {
+            map.put(curr, new Node(curr.data));
+            curr = curr.next;
+        }
+
+        // Second pass: Connect next and random pointers
+        curr = head;
+        while (curr != null) {
+            Node clone = map.get(curr);
+            clone.next = map.get(curr.next);
+            clone.random = map.get(curr.random);
+            curr = curr.next;
+        }
+
+        return map.get(head);
+    }
+}
