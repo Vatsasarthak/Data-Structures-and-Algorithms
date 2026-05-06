@@ -1,17 +1,10 @@
 <h2>GFG Problem</h2>
-<img src='https://img.shields.io/badge/Difficulty-Easy-brightgreen' alt='Difficulty: Easy' />
+<img src='https://img.shields.io/badge/Difficulty-Unknown-brightgreen' alt='Difficulty: Unknown' />
 <hr>
-<p><span style="font-size: 18px;">Given a doubly&nbsp;linked list of <strong>n </strong>nodes sorted by values, remove duplicate nodes present in the linked list.</span></p>
-<p><span style="font-size: 18px;"><strong>Examples:</strong></span></p>
-<pre><span style="font-size: 18px;"><strong>Input: </strong>n = 6, Linked List: 1&lt;-&gt;1&lt;-&gt;1&lt;-&gt;2&lt;-&gt;3&lt;-&gt;4
-<strong>Output: </strong>1&lt;-&gt;2&lt;-&gt;3&lt;-&gt;4
-<strong>Explanation:</strong>
-Only the first occurance of node with value 1 is 
-retained, rest nodes with value = 1 are deleted.</span>
-</pre>
-<pre><span style="font-size: 18px;"><strong>Input: </strong>n = 7, Linked List: 1&lt;-&gt;2&lt;-&gt;2&lt;-&gt;3&lt;-&gt;3&lt;-&gt;4&lt;-&gt;4
-<strong>Output: </strong>1&lt;-&gt;2&lt;-&gt;3&lt;-&gt;4
-<strong>Explanation:</strong>
-Only the first occurance of nodes with values 2,3 and 4 are 
-retained, rest repeating nodes are deleted.</span></pre>
-<p><span style="font-size: 18px;"><strong>Constraint:</strong><br>1 ≤ n ≤ 10<sup>5</sup><br></span></p>
+<p><span style="font-size: 18px;">Given a positive integer <strong>n</strong>, determine whether it is odd or even. Return </span><span style="font-size: 18px;"><strong>true </strong>if the number is even and <strong>false </strong>if the number is odd.</span></p>
+<p><strong><span style="font-size: 18px;">Examples:</span></strong></p>
+<pre style="text-wrap: wrap; color: #222222; background-color: #ffffff;"><strong><span style="font-size: 18px;">Input:</span></strong> <span style="font-size: 18px;">n = 15</span>
+<strong><span style="font-size: 18px;">Output: </span></strong><span style="font-size: 18px;">false</span>
+<strong><span style="font-size: 18px;">Explanation: </span></strong><span style="font-size: 18px;">The number is not divisible by 2, Odd number.</span></pre>
+<pre style="text-wrap: wrap; color: #222222; background-color: #ffffff;"><strong style="font-family: Arial, Helvetica, sans-serif; font-size: small;"><span style="font-size: 18px;">Input:</span></strong><span style="font-family: Arial, Helvetica, sans-serif; font-size: small;"> </span><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;">n = 44<br></span><strong style="font-family: Arial, Helvetica, sans-serif; font-size: small;"><span style="font-size: 18px;">Output: </span></strong><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;">true<br></span><strong style="font-family: Arial, Helvetica, sans-serif; font-size: small;"><span style="font-size: 18px;">Explanation: </span></strong><span style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;">The number is divisible by 2, Even number.</span></pre>
+<p><span style="font-size: 18px;"><strong>Constraints:</strong><br>1 ≤ n ≤ 10<sup>4</sup></span></p>
