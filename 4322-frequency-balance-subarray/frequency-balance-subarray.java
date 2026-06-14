@@ -10,15 +10,15 @@ class Solution {
             for (int j = i; j < n; j++) {
                 int old = mp.getOrDefault(a[j], 0);
                 if (old > 0)
-                    fq[old]--; // remove old frequency
+                    fq[old]--;
                mp.put(a[j], old + 1);
-                fq[old + 1]++; // add new frequency
+                fq[old + 1]++; 
                 if (old + 1 > mx) {
                     mx = old + 1;
-                    s = 1; // new maximum frequency found
+                    s = 1; 
                 }
                 else if (old + 1 == mx) {
-                    s++; // another value reaches maximum frequency
+                    s++; 
                 }
                 int distinct = mp.size();
                 if (distinct == 1) {
