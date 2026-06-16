@@ -1,0 +1,31 @@
+import java.util.*;
+
+class Solution {
+    public static ArrayList<Integer> search(String txt, String pat) {
+        ArrayList<Integer> ans = new ArrayList<>();
+        int n = txt.length(), m = pat.length();
+        if (m > n) return ans;
+
+        String s = pat + "#" + txt;           // '#' not in lowercase inputs
+        int[] Z = zFunction(s);
+
+        // Z[i] == m => match starts at (i - m - 1) in txt
+        for (int i = m + 1; i < Z.length; i++) {
+            if (Z[i] == m) ans.add(i - m - 1);
+        }
+        return ans;
+    }
+
+    private static int[] zFunction(String s) {
+        int n = s.length();
+        int[] Z = new int[n];
+        int L = 0, R = 0; // current Z-box [L, R]
+
+        for (int i = 1; i < n; i++) {
+            if (i <= R) Z[i] = Math.min(R - i + 1, Z[i - L]);
+            while (i + Z[i] < n && s.charAt(Z[i]) == s.charAt(i + Z[i])) Z[i]++;
+            if (i + Z[i] - 1 > R) { L = i; R = i + Z[i] - 1; }
+        }
+        return Z;
+    }
+}
