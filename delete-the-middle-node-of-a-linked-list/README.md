@@ -3,8 +3,8 @@
 Platform: LeetCode  
 Difficulty: Medium  
 Language: Choose a type  
-Problem Link: https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/submissions/2036852744/  
-Submitted At: 2026-06-17
+Problem Link: https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/submissions/2038622321/  
+Submitted At: 2026-06-19
 
 ---
 
