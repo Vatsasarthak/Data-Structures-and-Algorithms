@@ -3,8 +3,8 @@
 Platform: LeetCode  
 Difficulty: Medium  
 Language: Choose a type  
-Problem Link: https://leetcode.com/problems/insert-interval/submissions/2039586141/  
-Submitted At: 2026-06-20
+Problem Link: https://leetcode.com/problems/insert-interval/submissions/2041118126/  
+Submitted At: 2026-06-21
 
 ---
 
