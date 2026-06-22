@@ -3,7 +3,7 @@
 Platform: LeetCode  
 Difficulty: Medium  
 Language: Choose a type  
-Problem Link: https://leetcode.com/problems/maximum-manhattan-distance-after-all-moves/submissions/2041618085/  
+Problem Link: https://leetcode.com/problems/maximum-manhattan-distance-after-all-moves/submissions/2041618410/  
 Submitted At: 2026-06-22
 
 ---
