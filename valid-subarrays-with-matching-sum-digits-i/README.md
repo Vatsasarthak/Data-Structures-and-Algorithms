@@ -3,7 +3,7 @@
 Platform: LeetCode  
 Difficulty: Medium  
 Language: Choose a type  
-Problem Link: https://leetcode.com/problems/valid-subarrays-with-matching-sum-digits-i/  
+Problem Link: https://leetcode.com/problems/valid-subarrays-with-matching-sum-digits-i/submissions/2041619631/  
 Submitted At: 2026-06-22
 
 ---
