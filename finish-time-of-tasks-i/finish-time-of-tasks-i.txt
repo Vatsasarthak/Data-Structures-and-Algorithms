@@ -1,0 +1,31 @@
+adj[i] = new ArrayList<>();
+        }
+
+        for (int[] edge : edges) {
+            int u = edge[0];
+            int v = edge[1];
+            adj[u].add(v);
+        }
+
+        return solve(0, adj, baseTime);
+    }
+
+    private long solve(int node, List<Integer>[] adj, int[] arr) {
+        long ans = arr[node];
+
+        if (adj[node].size() == 0) {
+            return ans;
+        }
+
+        long mini = Long.MAX_VALUE;
+        long maxi = Long.MIN_VALUE;
+
+        for (int child : adj[node]) {
+            long t = solve(child, adj, arr);
+            mini = Math.min(mini, t);
+            maxi = Math.max(maxi, t);
+        }
+
+        return 2 * maxi - mini + ans;
+    }
+}
