@@ -1,0 +1,40 @@
+int[] arr;
+    int size;
+    
+    public myStack(int n) {
+        top = -1;
+        arr = new int[n];
+        size = n;
+    }
+
+    public boolean isEmpty() {
+        // check if the stack is empty
+        return top == -1;
+    }
+
+    public boolean isFull() {
+        // check if the stack is full
+        if(top == size -1){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    public void push(int x) {
+        if(isFull()){
+            return;
+        }
+        top = top + 1;
+        arr[top] = x;
+       
+    }
+
+    public void pop() {
+        // Removes an element from the top of the stack
+        if(isEmpty()){
+            return;
+        }
+        top--;
+    }
