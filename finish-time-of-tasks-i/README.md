@@ -3,8 +3,8 @@
 Platform: LeetCode  
 Difficulty: Medium  
 Language: Choose a type  
-Problem Link: https://leetcode.com/problems/finish-time-of-tasks-i/submissions/2047097747/  
-Submitted At: 2026-06-26
+Problem Link: https://leetcode.com/problems/finish-time-of-tasks-i/submissions/2048795743/  
+Submitted At: 2026-06-28
 
 ---
 
