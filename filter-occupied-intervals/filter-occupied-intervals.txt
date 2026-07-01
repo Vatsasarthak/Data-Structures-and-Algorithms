@@ -1,4 +1,8 @@
-Arrays.sort(arr, (a,b)-> Integer.compare(a[0], b[0]));
+class Solution {
+    public List<List<Integer>> filterOccupiedIntervals(int[][] arr, int freeStart, int 
+    freeEnd) {
+        int n = arr.length;
+        Arrays.sort(arr, (a,b)-> Integer.compare(a[0], b[0]));
         List<int[]> temp = new ArrayList<>();
         for(int[] brr : arr){
             if(temp.isEmpty() || temp.get(temp.size()-1)[1]+1<brr[0]){
@@ -25,7 +29,3 @@ Arrays.sort(arr, (a,b)-> Integer.compare(a[0], b[0]));
                 }
             }
         }
-        
-        return res;
-    }
-}
