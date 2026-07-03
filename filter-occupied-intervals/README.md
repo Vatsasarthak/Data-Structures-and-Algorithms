@@ -3,8 +3,8 @@
 Platform: LeetCode  
 Difficulty: Medium  
 Language: Choose a type  
-Problem Link: https://leetcode.com/problems/filter-occupied-intervals/submissions/2053704634/  
-Submitted At: 2026-07-02
+Problem Link: https://leetcode.com/problems/filter-occupied-intervals/submissions/2054942739/  
+Submitted At: 2026-07-03
 
 ---
 
