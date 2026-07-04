@@ -3,8 +3,8 @@
 Platform: LeetCode  
 Difficulty: Medium  
 Language: Choose a type  
-Problem Link: https://leetcode.com/problems/shortest-path-with-at-most-k-consecutive-identical-characters/submissions/2043711104/  
-Submitted At: 2026-06-23
+Problem Link: https://leetcode.com/problems/shortest-path-with-at-most-k-consecutive-identical-characters/submissions/2055582589/  
+Submitted At: 2026-07-04
 
 ---
 
