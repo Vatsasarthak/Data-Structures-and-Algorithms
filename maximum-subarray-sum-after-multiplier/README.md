@@ -3,8 +3,8 @@
 Platform: LeetCode  
 Difficulty: Medium  
 Language: Choose a type  
-Problem Link: https://leetcode.com/problems/maximum-subarray-sum-after-multiplier/submissions/2055583746/  
-Submitted At: 2026-07-04
+Problem Link: https://leetcode.com/problems/maximum-subarray-sum-after-multiplier/submissions/2057139277/  
+Submitted At: 2026-07-05
 
 ---
 
