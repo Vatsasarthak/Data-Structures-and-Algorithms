@@ -1,0 +1,30 @@
+public int divisibleGame(int[] nums) {
+        long maxDiff, maxK = 2, n = nums.length;
+        maxDiff = Integer.MIN_VALUE;
+        TreeSet<Integer> divisors = new TreeSet<>();
+        divisors.add(2);
+        for (int i : nums) {
+            while (i > 1) {
+                divisors.add(spf[i]);
+                i /= spf[i];
+            }
+        }
+
+        int aliceSum = 0, bobSum = 0;
+        for (Integer i : divisors) {
+            aliceSum = bobSum = 0;
+            for (int j = 0; j < n; j++) {
+                if ((nums[j] % i) == 0) aliceSum += nums[j];
+                else bobSum += nums[j];
+                long diff = aliceSum - bobSum;
+                if (diff > maxDiff) {
+                    maxDiff = diff;
+                    maxK = i;
+                }
+                if (diff < 0) aliceSum = bobSum = 0;
+            }
+        }
+
+        return (int) (((maxDiff * maxK) % MOD + MOD) % MOD);
+    }
+}
