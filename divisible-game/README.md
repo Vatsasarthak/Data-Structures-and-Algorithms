@@ -3,8 +3,8 @@
 Platform: LeetCode  
 Difficulty: Medium  
 Language: Choose a type  
-Problem Link: https://leetcode.com/problems/divisible-game/submissions/2058629487/  
-Submitted At: 2026-07-07
+Problem Link: https://leetcode.com/problems/divisible-game/submissions/2059888101/  
+Submitted At: 2026-07-08
 
 ---
 
