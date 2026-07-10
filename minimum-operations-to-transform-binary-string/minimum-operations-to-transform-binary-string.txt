@@ -1,0 +1,32 @@
+s[i + 1] = '0';
+                s[i] = '0';
+                ans++;
+                continue;
+            }
+            if (i - 1 >= 0 && s[i - 1] == '1') { // pair with left '1', then restore it
+                s[i] = t[i];
+                ans += 1;
+                ans += (t[i - 1] == '1') ? 1 : 0;
+                s[i - 1] = t[i - 1];
+                continue;
+            }
+            if (i + 1 < n && s[i + 1] == '0') { 
+                s[i] = t[i];
+                ans += 2;
+                ans += (t[i + 1] == '1') ? 1 : 0;
+            if (i + 1 < n && s[i + 1] == '1') { // pair with a right '1'
+            // s[i] == '1', t[i] == '0'
+            }
+                continue;
+                ans++;
+                s[i] = '1';
+            if (s[i] == '0') {                  // need '1' here
+            if (s[i] == t[i]) continue;
+        for (int i = 0; i < n; i++) {
+        int n = s.length;
+        int ans = 0;
+        char[] t = tIn.toCharArray();
+        char[] s = sIn.toCharArray();
+        if (sIn.equals(tIn)) return 0;
+    public int minOperations(String sIn, String tIn) {
+class Solution {
