@@ -1,0 +1,72 @@
+# Minimum Operations to Transform Binary String
+
+Platform: LeetCode  
+Difficulty: Medium  
+Language: Choose a type  
+Problem Link: https://leetcode.com/problems/minimum-operations-to-transform-binary-string/  
+Submitted At: 2026-07-10
+
+---
+
+## Description
+
+<p>You are given two <span data-keyword="binary-string" class=" cursor-pointer relative text-dark-blue-s text-sm"></span> <code>s1</code> and <code>s2</code> of the same length <code>n</code>.</p>
+
+<p>You can perform the following operations on <code>s1</code> any number of times, in any order:</p>
+
+<ul>
+	<li>Choose an index <code>i</code> such that <code>s1[i] == '0'</code>, and change it to <code>'1'</code>.</li>
+	<li>Choose an index <code>i</code> such that <code>0 &lt;= i &lt; n - 1</code>, and both <code>s1[i]</code> and <code>s1[i + 1]</code> are <code>'1'</code>. Change both characters to <code>'0'</code>.</li>
+</ul>
+
+<p>Return the <strong>minimum</strong> number of operations required to make <code>s1</code> equal to <code>s2</code>. If it is impossible, return -1.</p>
+
+<p>&nbsp;</p>
+<p><strong class="example">Example 1:</strong></p>
+
+<div class="example-block">
+<p><strong>Input:</strong> <span class="example-io">s1 = "11", s2 = "00"</span></p>
+
+<p><strong>Output:</strong> <span class="example-io">1</span></p>
+
+<p><strong>Explanation:</strong></p>
+
+<p>Change indices 0 and 1 from <code>'1'</code> to <code>'0'</code> in one operation, so <code>"11"</code> becomes <code>"00"</code>. Thus, the answer is 1.</p>
+</div>
+
+<p><strong class="example">Example 2:</strong></p>
+
+<div class="example-block">
+<p><strong>Input:</strong> <span class="example-io">s1 = "01", s2 = "10"</span></p>
+
+<p><strong>Output:</strong> <span class="example-io">3</span></p>
+
+<p><strong>Explanation:</strong></p>
+
+<ul>
+	<li>Change index 0 from <code>'0'</code> to <code>'1'</code>, so <code>"01"</code> becomes <code>"11"</code>.</li>
+	<li>Change indices 0 and 1 from <code>'1'</code> to <code>'0'</code>, so <code>"11"</code> becomes <code>"00"</code>.</li>
+	<li>Change index 0 from <code>'0'</code> to <code>'1'</code>, so <code>"00"</code> becomes <code>"10"</code>.</li>
+	<li>Thus, the answer is 3.</li>
+</ul>
+</div>
+
+<p><strong class="example">Example 3:</strong></p>
+
+<div class="example-block">
+<p><strong>Input:</strong> <span class="example-io">s1 = "1", s2 = "0"</span></p>
+
+<p><strong>Output:</strong> <span class="example-io">-1</span></p>
+
+<p><strong>Explanation:</strong></p>
+
+<p>The first operation cannot change <code>'1'</code> to <code>'0'</code>, and the second operation requires two adjacent characters. Therefore, it is impossible.</p>
+</div>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= n == s1.length == s2.length &lt;= 10<sup>5</sup></code></li>
+	<li><code>s1</code> and <code>s2</code> consist only of <code>'0'</code> and <code>'1'</code>.</li>
+</ul>
