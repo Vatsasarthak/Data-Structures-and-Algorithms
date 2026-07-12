@@ -3,8 +3,8 @@
 Platform: LeetCode  
 Difficulty: Medium  
 Language: Choose a type  
-Problem Link: https://leetcode.com/problems/minimum-operations-to-transform-binary-string/submissions/2062338341/  
-Submitted At: 2026-07-10
+Problem Link: https://leetcode.com/problems/minimum-operations-to-transform-binary-string/submissions/2065190153/  
+Submitted At: 2026-07-12
 
 ---
 
