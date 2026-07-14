@@ -3,8 +3,8 @@
 Platform: LeetCode  
 Difficulty: Medium  
 Language: Choose a type  
-Problem Link: https://leetcode.com/problems/minimum-total-cost-to-process-all-elements/submissions/2066421347/  
-Submitted At: 2026-07-13
+Problem Link: https://leetcode.com/problems/minimum-total-cost-to-process-all-elements/submissions/2067597896/  
+Submitted At: 2026-07-14
 
 ---
 
