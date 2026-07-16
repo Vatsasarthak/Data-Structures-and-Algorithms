@@ -3,8 +3,8 @@
 Platform: LeetCode  
 Difficulty: Easy  
 Language: Choose a type  
-Problem Link: https://leetcode.com/problems/number-of-elapsed-seconds-between-two-times/submissions/2066420006/  
-Submitted At: 2026-07-13
+Problem Link: https://leetcode.com/problems/number-of-elapsed-seconds-between-two-times/submissions/2069902574/  
+Submitted At: 2026-07-16
 
 ---
 
