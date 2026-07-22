@@ -3,8 +3,8 @@
 Platform: LeetCode  
 Difficulty: Easy  
 Language: Choose a type  
-Problem Link: https://leetcode.com/problems/rearrange-string-to-avoid-character-pair/submissions/2075219237/  
-Submitted At: 2026-07-21
+Problem Link: https://leetcode.com/problems/rearrange-string-to-avoid-character-pair/submissions/2077261819/  
+Submitted At: 2026-07-22
 
 ---
 
