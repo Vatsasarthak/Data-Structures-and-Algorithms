@@ -3,8 +3,8 @@
 Platform: LeetCode  
 Difficulty: Medium  
 Language: Choose a type  
-Problem Link: https://leetcode.com/problems/number-of-unique-xor-triplets-i/submissions/2078594821/?envType=daily-question&envId=2026-07-23  
-Submitted At: 2026-07-23
+Problem Link: https://leetcode.com/problems/number-of-unique-xor-triplets-i/submissions/2079734630/  
+Submitted At: 2026-07-24
 
 ---
 
