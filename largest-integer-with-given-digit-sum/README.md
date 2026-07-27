@@ -3,8 +3,8 @@
 Platform: LeetCode  
 Difficulty: Easy  
 Language: Choose a type  
-Problem Link: https://leetcode.com/problems/largest-integer-with-given-digit-sum/submissions/2081560346/  
-Submitted At: 2026-07-26
+Problem Link: https://leetcode.com/problems/largest-integer-with-given-digit-sum/submissions/2083787333/  
+Submitted At: 2026-07-27
 
 ---
 
