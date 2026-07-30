@@ -3,8 +3,8 @@
 Platform: LeetCode  
 Difficulty: Medium  
 Language: Choose a type  
-Problem Link: https://leetcode.com/problems/aggregate-two-time-series/submissions/2086360168/  
-Submitted At: 2026-07-29
+Problem Link: https://leetcode.com/problems/aggregate-two-time-series/submissions/2087964410/  
+Submitted At: 2026-07-30
 
 ---
 
