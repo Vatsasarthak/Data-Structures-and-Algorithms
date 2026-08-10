@@ -3,8 +3,8 @@
 Platform: LeetCode  
 Difficulty: Medium  
 Language: Choose a type  
-Problem Link: https://leetcode.com/problems/find-the-lexicographically-smallest-valid-sequence/submissions/2099312531/  
-Submitted At: 2026-08-08
+Problem Link: https://leetcode.com/problems/find-the-lexicographically-smallest-valid-sequence/submissions/2101975203/  
+Submitted At: 2026-08-10
 
 ---
 
