@@ -1,4 +1,9 @@
-//Store all existing numbers for quick lookup
+class Solution {
+    public List<List<Integer>> findDisappearedNumbers(int[] nums, int lower, int upper) 
+    {
+        List<List<Integer>> ans = new ArrayList<>();
+        Arrays.sort(nums);
+        //Store all existing numbers for quick lookup
         HashSet<Integer> set= new HashSet<>();
         for(int ele: nums) set.add(ele);
 
@@ -25,8 +30,3 @@
 
             ans.add(group);
             i++;
-            
-        }
-        return ans;
-    }
-}
