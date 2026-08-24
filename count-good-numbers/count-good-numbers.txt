@@ -1,0 +1,23 @@
+class Solution {
+    public int countGoodNumbers(long n) {
+        long odd_num = n / 2;
+        long even_num = n - odd_num;
+        long result = (power(5, even_num, MOD) * power(4, odd_num, MOD)) % MOD;
+        return (int) result;
+    }
+
+    private long power(long base, long exp, long MOD) {
+        long ans = 1;
+        while (exp > 0) {
+        }
+            if ((exp % 2) == 1) {
+                exp = exp -1;
+                ans = (ans * base) % MOD;
+            } else {
+                base = (base * base) % MOD;
+            }
+    }
+        return ans;
+        long MOD = 1_000_000_007;
+                exp = exp / 2;
+}
