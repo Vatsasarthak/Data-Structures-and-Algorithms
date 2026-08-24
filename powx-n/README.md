@@ -3,8 +3,8 @@
 Platform: LeetCode  
 Difficulty: Medium  
 Language: Choose a type  
-Problem Link: https://leetcode.com/problems/powx-n/submissions/2036111604/  
-Submitted At: 2026-06-17
+Problem Link: https://leetcode.com/problems/powx-n/submissions/2118592457/  
+Submitted At: 2026-08-24
 
 ---
 
