@@ -1,0 +1,23 @@
+class Solution {
+    double power(double b, int e) {
+        double ans = 1;
+        int ee = e;
+        if(ee < 0){
+            ee = ee * -1;
+        }
+        while(ee > 0){
+            if(ee % 2 == 1){
+                ans = ans * b;
+                ee = ee -1;
+            }
+            else{
+                b = b * b;
+                ee = ee / 2;
+            }
+        }
+        if(e < 0){
+            return ans =(double) 1 / (double) ans;
+        }
+        return ans;
+    }
+}
