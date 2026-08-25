@@ -1,0 +1,19 @@
+class Solution {
+    public static void reverseStack(Stack<Integer> st) {
+       if(st.isEmpty()){
+           return;
+       } 
+       int element = st.pop();
+       reverseStack(st);
+       insertstack(st , element);
+    }
+    public static void insertstack(Stack<Integer> st , int element){
+        if(st.isEmpty()){
+            st.push(element);
+            return;
+        }
+        int top =st.pop();
+        insertstack(st , element);
+        st.push(top);
+    }
+}
