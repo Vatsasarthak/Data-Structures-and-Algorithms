@@ -1,48 +1,52 @@
-# Count Good Numbers
+# Count Good numbers
 
-Platform: LeetCode  
+Platform: GeeksforGeeks  
 Difficulty: Medium  
-Language: Choose a type  
-Problem Link: https://leetcode.com/problems/count-good-numbers/submissions/2118732818/  
-Submitted At: 2026-08-24
+Language: unknown  
+Problem Link: https://www.geeksforgeeks.org/problems/count-good-numbers/1  
+Submitted At: 2026-08-25
 
 ---
 
 ## Description
 
-<p>A digit string is <strong>good</strong> if the digits <strong>(0-indexed)</strong> at <strong>even</strong> indices are <strong>even</strong> and the digits at <strong>odd</strong> indices are <strong>prime</strong> (<code>2</code>, <code>3</code>, <code>5</code>, or <code>7</code>).</p>
+<p><span style="font-size:18px">A digit string is <strong>good</strong> if the digits <strong>(0-indexed)</strong> at <strong>even</strong> indices are even and digits at <strong>odd</strong> indices are <strong>prime</strong> ( 2 , 3 , 5 or 7 ).</span></p>
 
 <ul>
-	<li>For example, <code>"2582"</code> is good because the digits (<code>2</code> and <code>8</code>) at even positions are even and the digits (<code>5</code> and <code>2</code>) at odd positions are prime. However, <code>"3245"</code> is <strong>not</strong> good because <code>3</code> is at an even index but is not even.</li>
+	<li><span style="font-size:18px">For example, "4562" is good because the digits (4&nbsp;and 6) at even positions are even and the digits (5 and 2) at odd positions are prime. However, "3245" is <strong>not</strong> good.</span></li>
 </ul>
 
-<p>Given an integer <code>n</code>, return <em>the <strong>total</strong> number of good digit strings of length </em><code>n</code>. Since the answer may be large, <strong>return it modulo </strong><code>10<sup>9</sup> + 7</code>.</p>
+<p><span style="font-size:18px">Given an integer <strong>N</strong>&nbsp;, return the <strong>total</strong> number of <strong>good digit strings</strong> of length N.<br>
+Since the answer may be too large, return it <strong>modulo 10<sup>9</sup> + 7</strong>.</span></p>
 
-<p>A <strong>digit string</strong> is a string consisting of digits <code>0</code> through <code>9</code> that may contain leading zeros.</p>
-
-<p>&nbsp;</p>
-<p><strong class="example">Example 1:</strong></p>
-
-<pre><strong>Input:</strong> n = 1
-<strong>Output:</strong> 5
-<strong>Explanation:</strong> The good numbers of length 1 are "0", "2", "4", "6", "8".
-</pre>
-
-<p><strong class="example">Example 2:</strong></p>
-
-<pre><strong>Input:</strong> n = 4
-<strong>Output:</strong> 400
-</pre>
-
-<p><strong class="example">Example 3:</strong></p>
-
-<pre><strong>Input:</strong> n = 50
-<strong>Output:</strong> 564908303
-</pre>
+<p><span style="font-size:18px">Note : A <strong>digit string</strong> is a string consisting of digits 0 through 9 that may contain leading zeros.</span></p>
 
 <p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
 
-<ul>
-	<li><code>1 &lt;= n &lt;= 10<sup>15</sup></code></li>
-</ul>
+<p><span style="font-size:18px"><strong>Example 1:</strong></span></p>
+
+<div style="background: rgb(238, 238, 238); border: 1px solid rgb(204, 204, 204); padding: 5px 10px; --darkreader-inline-bgimage: initial; --darkreader-inline-bgcolor:#222426; --darkreader-inline-border-top:#3e4446; --darkreader-inline-border-right:#3e4446; --darkreader-inline-border-bottom:#3e4446; --darkreader-inline-border-left:#3e4446;"><span style="font-size:18px"><strong>Input:</strong><br>
+N = 1<br>
+<strong>Output:</strong><br>
+5<br>
+<strong>Explanation:</strong><br>
+The good digit string of length of 1 are "0" , "2" , "4" ,"6" and "8".</span></div>
+
+<p><span style="font-size:18px"><strong>Example 2:</strong></span></p>
+
+<div style="background: rgb(238, 238, 238); border: 1px solid rgb(204, 204, 204); padding: 5px 10px; --darkreader-inline-bgimage: initial; --darkreader-inline-bgcolor:#222426; --darkreader-inline-border-top:#3e4446; --darkreader-inline-border-right:#3e4446; --darkreader-inline-border-bottom:#3e4446; --darkreader-inline-border-left:#3e4446;"><span style="font-size:18px"><strong>Input:</strong><br>
+N = 3<br>
+<strong>Output:</strong><br>
+100</span></div>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:18px"><strong>Your Task:</strong></span></p>
+
+<p><span style="font-size:18px">You don't need to read input or print anything. Your task is to complete the function<strong> countGoodNumbers()</strong>&nbsp;which takes an integer N as inputs&nbsp;returns the total number of good digit strings of length N&nbsp;. As this result can be very large return the result under modulo 10<sup>9</sup>+7.</span></p>
+
+<p><span style="font-size:18px"><strong>Expected Time Complexity:</strong> O(logN)<br>
+<strong>Expected Auxiliary Space:</strong> O(1)</span></p>
+
+<p><span style="font-size:18px"><strong>Constraints:</strong><br>
+1 &lt;= N &lt;= 10<sup>1</sup><sup>5</sup></span></p>
