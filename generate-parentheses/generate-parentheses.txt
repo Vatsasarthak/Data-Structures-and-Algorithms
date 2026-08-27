@@ -1,20 +1,24 @@
-class Solution {
-    public List<String> generateParenthesis(int n) {
-        List<String> result = new ArrayList<>();
-        fnctn(n, result, 0, 0, "");
-        return result;
-    }
+class Solution {
+    
+    public void recursion(int n, List<String> ans, String pair, int open, int close){
+        
+        if(pair.length()==n){
+            ans.add(pair);
+            return;
+        }
 
-    public void fnctn(int n, List<String> result, int open, int close, String s) {
-        if (s.length() == n * 2) {
-            return;
-            result.add(s);
-        }
-        if (open < n) {
-            fnctn(n, result, open + 1, close, s + "(");
-        }
-        if (close < open) {
-            fnctn(n, result, open, close + 1, s + ")");
-        }
-    }
+        if(open<n/2){
+         
+            recursion(n, ans, pair+'(', open+1, close);
+        }
+        if(close<open){
+            recursion(n, ans, pair+')', open, close+1);
+        }
+    }
+    
+    public ArrayList<String> generateParentheses(int n) {
+        ArrayList<String> ans = new ArrayList<>();
+        recursion(n, ans, "", 0, 0);
+        return ans;
+    }
 }
