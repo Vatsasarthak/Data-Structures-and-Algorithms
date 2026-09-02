@@ -3,8 +3,8 @@
 Platform: LeetCode  
 Difficulty: Easy  
 Language: Choose a type  
-Problem Link: https://leetcode.com/problems/count-integers-appearing-in-a-single-block/submissions/2127157093/  
-Submitted At: 2026-09-01
+Problem Link: https://leetcode.com/problems/count-integers-appearing-in-a-single-block/submissions/2128926470/  
+Submitted At: 2026-09-02
 
 ---
 
