@@ -1,19 +1,19 @@
-// Agar pehli baar aaya hai, toh first position note karo
-            if (firstPos[x] == -1) {
-
-            int x = nums[i];
-        for (int i = 0; i < nums.length; i++) {
-        // Array mein traverse karke details track karo
-
-        }
-            lastPos[i] = -1;
-            firstPos[i] = -1;
-        for (int i = 0; i <= 100; i++) {
-        // Arrays ko -1 se fill kar dete hain kyunki index 0 bhi hota hai
-        int[] freq = new int[101];
-
-        int[] lastPos = new int[101];
-        int[] firstPos = new int[101];
+class Solution {
     public int countSpecialIntegers(int[] nums) {
         // Constraints ke hisaab se max number 100 ho sakta hai
-class Solution {
+        int[] firstPos = new int[101];
+        int[] lastPos = new int[101];
+        int[] freq = new int[101];
+
+        // Arrays ko -1 se fill kar dete hain kyunki index 0 bhi hota hai
+        for (int i = 0; i <= 100; i++) {
+            firstPos[i] = -1;
+            lastPos[i] = -1;
+        }
+
+        // Array mein traverse karke details track karo
+        for (int i = 0; i < nums.length; i++) {
+            int x = nums[i];
+
+            // Agar pehli baar aaya hai, toh first position note karo
+            if (firstPos[x] == -1) {
