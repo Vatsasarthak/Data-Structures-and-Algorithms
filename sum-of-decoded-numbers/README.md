@@ -3,8 +3,8 @@
 Platform: LeetCode  
 Difficulty: Medium  
 Language: Choose a type  
-Problem Link: https://leetcode.com/problems/sum-of-decoded-numbers/submissions/2129404085/  
-Submitted At: 2026-09-03
+Problem Link: https://leetcode.com/problems/sum-of-decoded-numbers/submissions/2131018243/  
+Submitted At: 2026-09-04
 
 ---
 
