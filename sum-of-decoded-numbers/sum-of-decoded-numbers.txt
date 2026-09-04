@@ -1,8 +1,6 @@
-long power = calculatePower(x, y, MOD);
-            sum = (sum + power) % MOD;
-        }
-        return (int)sum;
+return (int) sum;
     }
+
     private long calculatePower(long x, long y, long MOD) {
         long result = 1;
         while (y > 0) {
