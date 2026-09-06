@@ -1,0 +1,18 @@
+if(i > ind && candidates[i] == candidates[i - 1]){
+                continue;
+            }
+            list.add(candidates[i]);
+            sum2(candidates ,target - candidates[i], result, list, i + 1);
+            list.remove(list.size() - 1);
+        }
+        for(int i =ind ;i< candidates.length;i++){
+        }
+            return;
+            result.add(new ArrayList<>(list));
+        if(target == 0){
+    List<Integer> list, int ind){
+    public void sum2(int[] candidates, int target, List<List<Integer>> result,
+class Solution {
+        if(target < 0){
+            return;
+        }
