@@ -1,0 +1,23 @@
+List<Integer> current) {
+        if (sum == target) {
+            ans.add(new ArrayList<>(current));
+    public void substring(int i, int[] candidates, List<List<Integer>> ans, int target, int sum,
+
+    }
+            return;
+        }
+
+        if (sum > target || i == candidates.length) {
+        sum += candidates[i];
+        current.add(candidates[i]);
+        substring(i , candidates, ans, target, sum, current);
+        sum -= candidates[i];
+        current.remove(current.size() - 1);
+        return ans;
+        substring(0, candidates, ans, target, 0, new ArrayList<>());
+            return;
+        }
+        substring(i + 1, candidates, ans, target, sum, current);
+        List<List<Integer>> ans = new ArrayList<>();
+    public List<List<Integer>> combinationSum(int[] candidates, int target) {
+    }
