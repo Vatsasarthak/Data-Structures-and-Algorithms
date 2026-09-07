@@ -1,13 +1,23 @@
-if(i > ind && nums[i] == nums[i - 1]){
-            continue;
-        }
-        demo.add(nums[i]);
-        subset(i + 1, result ,nums , demo);
-       for(int i=ind;i<nums.length;i++){
-    int[] nums, List<Integer>demo){
-    public void subset(int ind ,List<List<Integer>> result , 
-class Solution {
-        demo.remove(demo.size() - 1);
-        //subset(ind + 1, result,nums , demo);
-    }
+demo) {
         result.add(new ArrayList<>(demo));
+        for (int i = ind; i < nums.length; i++) {
+            if (i > ind && nums[i] == nums[i - 1]) {
+                continue;
+            }
+            demo.add(nums[i]);
+            subset(i + 1, result, nums, demo);
+            demo.remove(demo.size() - 1);
+
+        }
+    }
+
+    public List<List<Integer>> subsetsWithDup(int[] nums) {
+        List<List<Integer>> result = new ArrayList<>();
+        List<Integer> demo = new ArrayList<>();
+        Arrays.sort(nums);
+        subset(0, result, nums, demo);
+        return result;
+    }
+}
+    public void subset(int ind, List<List<Integer>> result, int[] nums, List<Integer> 
+class Solution {
