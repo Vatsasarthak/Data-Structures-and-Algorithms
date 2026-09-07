@@ -1,0 +1,13 @@
+if(i > ind && nums[i] == nums[i - 1]){
+            continue;
+        }
+        demo.add(nums[i]);
+        subset(i + 1, result ,nums , demo);
+       for(int i=ind;i<nums.length;i++){
+    int[] nums, List<Integer>demo){
+    public void subset(int ind ,List<List<Integer>> result , 
+class Solution {
+        demo.remove(demo.size() - 1);
+        //subset(ind + 1, result,nums , demo);
+    }
+        result.add(new ArrayList<>(demo));
