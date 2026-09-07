@@ -1,0 +1,27 @@
+class Solution {
+    public void sum(int in, List<List<Integer>> result, List<Integer> demo, int k, int 
+    n, int sum, int start) {
+        if (in == k) {
+            if (sum == n) {
+                result.add(new ArrayList<>(demo));
+            }
+            return;
+        }
+
+        for (int i = start; i <= 9; i++) {
+            demo.add(i);
+
+            sum(in + 1, result, demo, k, n, sum + i, i + 1);
+
+            demo.remove(demo.size() - 1);
+        }
+    }
+
+    public List<List<Integer>> combinationSum3(int k, int n) {
+        List<List<Integer>> result = new ArrayList<>();
+        List<Integer> demo = new ArrayList<>();
+        int sum = 0;
+        sum(0, result, demo, k, n, sum, 1);
+        return result;
+    }
+}
