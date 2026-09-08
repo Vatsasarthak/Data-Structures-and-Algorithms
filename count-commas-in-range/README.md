@@ -3,7 +3,7 @@
 Platform: LeetCode  
 Difficulty: Easy  
 Language: Choose a type  
-Problem Link: https://leetcode.com/problems/count-commas-in-range/submissions/2134915324/?envType=daily-question&envId=2026-09-08  
+Problem Link: https://leetcode.com/problems/count-commas-in-range/submissions/2134916477/?envType=daily-question&envId=2026-09-08  
 Submitted At: 2026-09-08
 
 ---
