@@ -5,7 +5,7 @@ class Solution {
         int commas = 1;
         long result = 0;
         while (lower <= n) {
-          long  upper = lower * 1000 - 1;
+            long upper = lower * 1000 - 1;
             if (upper > n) {
                 upper = n;
             }
