@@ -3,7 +3,7 @@
 Platform: LeetCode  
 Difficulty: Easy  
 Language: Choose a type  
-Problem Link: https://leetcode.com/problems/implement-stack-using-queues/submissions/2137990914/  
+Problem Link: https://leetcode.com/problems/implement-stack-using-queues/submissions/2137996507/  
 Submitted At: 2026-09-10
 
 ---
