@@ -3,7 +3,7 @@
 Platform: LeetCode  
 Difficulty: Easy  
 Language: Choose a type  
-Problem Link: https://leetcode.com/problems/count-values-with-equally-spaced-occurrences-i/submissions/2139987821/  
+Problem Link: https://leetcode.com/problems/count-values-with-equally-spaced-occurrences-ii/submissions/2139988546/  
 Submitted At: 2026-09-12
 
 ---
