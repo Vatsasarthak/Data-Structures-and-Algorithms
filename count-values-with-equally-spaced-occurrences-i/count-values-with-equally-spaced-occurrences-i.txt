@@ -1,0 +1,25 @@
+class Solution {
+    public int countSpecialIntegers(int[] nums) {
+        Map<Integer, List<Integer>> mpp = new HashMap<>();
+            int val = nums[i];
+            mpp.computeIfAbsent(val, k -> new ArrayList<>()).add(i);
+        }
+
+        int count = 0;
+        int n = nums.length;
+        for(int i = 0; i < n; i++) {
+
+        for(int val : mpp.keySet()) {
+            List<Integer> it = mpp.get(val);
+            int size = it.size();
+            if(size != 3) continue;
+
+            if(it.get(2) - it.get(1) == it.get(1) - it.get(0)) {
+                count++;
+            }
+                    
+        }
+
+        return count;
+    }
+}
