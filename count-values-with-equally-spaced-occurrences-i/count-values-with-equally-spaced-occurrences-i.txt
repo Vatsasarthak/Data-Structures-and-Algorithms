@@ -1,25 +1,32 @@
-class Solution {
-    public int countSpecialIntegers(int[] nums) {
-        Map<Integer, List<Integer>> mpp = new HashMap<>();
-            int val = nums[i];
-            mpp.computeIfAbsent(val, k -> new ArrayList<>()).add(i);
+pos.computeIfAbsent(nums[i], k -> new ArrayList<>()).add(i);
         }
 
-        int count = 0;
-        int n = nums.length;
-        for(int i = 0; i < n; i++) {
+        int res = 0;
 
-        for(int val : mpp.keySet()) {
-            List<Integer> it = mpp.get(val);
-            int size = it.size();
-            if(size != 3) continue;
+        for (List<Integer> list : pos.values()) {
 
-            if(it.get(2) - it.get(1) == it.get(1) - it.get(0)) {
-                count++;
+            if (list.size() >= 3) {
+
+                int gap = list.get(1) - list.get(0);
+                boolean flag = true;
+
+                for (int i = 2; i < list.size(); i++) {
+                    if (list.get(i) - list.get(i - 1) != gap) {
+                        flag = false;
+                        break;
+                    }
+                }
+
+                if (flag) {
+                    res++;
+                }
             }
-                    
         }
 
-        return count;
+        return res;
     }
-}
+        for (int i = 0; i < nums.length; i++) {
+    public int countSpecialIntegers(int[] nums) {
+        Map<Integer, List<Integer>> pos = new HashMap<>();
+
+class Solution {
