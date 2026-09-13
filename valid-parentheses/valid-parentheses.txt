@@ -1,0 +1,28 @@
+if (st.isEmpty()) {
+                    return false;
+                }
+                char topChar = st.pop();
+                if ((currentChar == ')' && topChar == '(') ||
+                        (currentChar == '}' && topChar == '{') ||
+                        (currentChar == ']' && topChar == '[')) {
+
+                    continue;
+                } else {
+                    return false;
+            }
+        }
+        return st.isEmpty();
+    }
+            == '[') {
+                st.push(currentChar);
+            } else {
+            if (currentChar == '(' || currentChar == '{' || currentChar 
+
+            char currentChar = s.charAt(i);
+        for (int i = 0; i < s.length(); i++) {
+
+    public boolean isValid(String s) {
+        Stack<Character> st = new Stack<>();
+class Solution {
+}
+                }
