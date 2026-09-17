@@ -1,0 +1,32 @@
+min =2L * min - n;
+        if(n < min){
+        st.pop();
+        long n=st.peek();
+        }
+            return;
+        if(st.isEmpty()){
+    public void pop() {
+    }
+    
+            }
+        }
+                 //yaha hum log modified value daalenge 
+                min = value;
+                st.push((long)value);
+            }
+            else{
+                st.push(2L * value - min);
+            if(value > min){
+        }
+        else{
+        }
+            min = value;
+            st.push((long)value);
+        if(st.isEmpty()){
+    public void push(int value) {
+    
+    }
+        
+    }
+    
+    public int top() {
