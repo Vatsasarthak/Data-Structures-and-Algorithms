@@ -1,23 +1,26 @@
-min =2L * min - n;
-        if(n < min){
-        st.pop();
-        long n=st.peek();
-        }
-            return;
-        if(st.isEmpty()){
-    public void pop() {
+}
     }
     
+    public int top() {
+            min =2L * min - n;
+        long n=st.peek();
+        st.pop();
+        if(n < min){
+        if(st.isEmpty()){
+            return;
+        }
+    }
+    
+    public void pop() {
             }
         }
-                 //yaha hum log modified value daalenge 
                 min = value;
-                st.push((long)value);
-            }
-            else{
                 st.push(2L * value - min);
+                 //yaha hum log modified value daalenge 
+            else{
+            }
             if(value > min){
-        }
+                st.push((long)value);
         else{
         }
             min = value;
@@ -27,6 +30,5 @@ min =2L * min - n;
     
     }
         
-    }
-    
-    public int top() {
+    public MinStack() {
+    long min = 1000000000;
