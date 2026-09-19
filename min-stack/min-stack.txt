@@ -1,34 +1,32 @@
-}
+class MinStack {
+    Stack<Long>st = new Stack<>();
+    long min = 1000000000;
+    public MinStack() {
+        
     }
     
-    public int top() {
-            min =2L * min - n;
-        long n=st.peek();
-        st.pop();
-        if(n < min){
+    public void push(int value) {
         if(st.isEmpty()){
-            return;
+            st.push((long)value);
+            min = value;
+        }
+        else{
+            if(value > min){
+                st.push((long)value);
+            }
+            else{
+                st.push(2L * value - min);
+                 //yaha hum log modified value daalenge 
+                min = value;
+            }
         }
     }
     
     public void pop() {
-            }
-        }
-                min = value;
-                st.push(2L * value - min);
-                 //yaha hum log modified value daalenge 
-            else{
-            }
-            if(value > min){
-                st.push((long)value);
-        else{
-        }
-            min = value;
-            st.push((long)value);
         if(st.isEmpty()){
-    public void push(int value) {
-    
-    }
-        
-    public MinStack() {
-    long min = 1000000000;
+            return;
+        }
+        long n=st.peek();
+        st.pop();
+        if(n < min){
+            min =2L * min - n;
