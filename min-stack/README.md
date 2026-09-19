@@ -3,8 +3,8 @@
 Platform: LeetCode  
 Difficulty: Medium  
 Language: Choose a type  
-Problem Link: https://leetcode.com/problems/min-stack/submissions/2145863153/  
-Submitted At: 2026-09-18
+Problem Link: https://leetcode.com/problems/min-stack/submissions/2147020095/  
+Submitted At: 2026-09-19
 
 ---
 
