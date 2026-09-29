@@ -2,8 +2,8 @@
 
 Platform: LeetCode  
 Difficulty: Medium  
-Language: Java  
-Problem Link: https://leetcode.com/problems/asteroid-collision/description/  
+Language: Choose a type  
+Problem Link: https://leetcode.com/problems/asteroid-collision/submissions/2157596858/  
 Submitted At: 2026-09-29
 
 ---
