@@ -3,7 +3,7 @@
 Platform: LeetCode  
 Difficulty: Medium  
 Language: Choose a type  
-Problem Link: https://leetcode.com/problems/asteroid-collision/submissions/2157596858/  
+Problem Link: https://leetcode.com/problems/asteroid-collision/submissions/2157597000/  
 Submitted At: 2026-09-29
 
 ---
