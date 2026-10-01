@@ -3,8 +3,8 @@
 Platform: LeetCode  
 Difficulty: Easy  
 Language: Choose a type  
-Problem Link: https://leetcode.com/problems/valid-parentheses/submissions/2142484018/  
-Submitted At: 2026-09-15
+Problem Link: https://leetcode.com/problems/valid-parentheses/submissions/2159238395/?envType=daily-question&envId=2026-10-01  
+Submitted At: 2026-10-01
 
 ---
 
