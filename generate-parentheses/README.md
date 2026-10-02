@@ -3,8 +3,8 @@
 Platform: LeetCode  
 Difficulty: Medium  
 Language: Choose a type  
-Problem Link: https://leetcode.com/problems/generate-parentheses/  
-Submitted At: 2026-08-29
+Problem Link: https://leetcode.com/problems/generate-parentheses/submissions/2160292193/?envType=daily-question&envId=2026-10-02  
+Submitted At: 2026-10-02
 
 ---
 
