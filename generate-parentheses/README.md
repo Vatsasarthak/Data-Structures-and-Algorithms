@@ -3,7 +3,7 @@
 Platform: LeetCode  
 Difficulty: Medium  
 Language: Choose a type  
-Problem Link: https://leetcode.com/problems/generate-parentheses/submissions/2160621764/?envType=daily-question&envId=2026-10-02  
+Problem Link: https://leetcode.com/problems/generate-parentheses/submissions/2161494321/  
 Submitted At: 2026-10-03
 
 ---
