@@ -1,0 +1,33 @@
+public int[] getNSR(int[] arr, int n) {
+        int[] res = new int[n];
+        Stack<Integer> st = new Stack<>();
+        for (int i = n - 1; i >= 0; i--) {
+            while (!st.isEmpty() && arr[st.peek()] > arr
+            [i]) {
+                st.pop();
+            }
+            res[i] = st.isEmpty() ? n : st.peek();
+            st.push(i);
+        }
+        return res;
+    }
+
+    public int sumSubarrayMins(int[] arr) {
+        int n = arr.length;
+        int[] nextsmaller = getNSL(arr, n);
+        int[] nextgreater = getNSR(arr, n);
+        long sum = 0;
+        long mod = (long) 1e9 + 7;
+
+    }
+        return res;
+        }
+            st.push(i);
+            res[i] = st.isEmpty() ? -1 : st.peek();
+            }
+                st.pop();
+            [i]) {
+            while (!st.isEmpty() && arr[st.peek()] >= arr
+        for (int i = 0; i < n; i++) {
+        Stack<Integer> st = new Stack<>();
+        int[] res = new int[n];
