@@ -1,0 +1,32 @@
+class Solution {
+    public ArrayList<Integer> reducePairs(int[] arr) {
+        Stack<Integer> st = new Stack<>();
+
+        for (int i : arr) {
+            boolean currentDestroyed = false;
+
+            // Loop while stack is not empty AND the elements have OPPOSITE signs
+            while (!st.isEmpty() && ((st.peek() > 0 && i < 0) || (st.peek() < 0 && i > 0))) {
+
+                // Compare absolute values
+                if (Math.abs(st.peek()) < Math.abs(i)) {
+                    st.pop(); // The top of stack is smaller, remove it. (Loop continues)
+                } else if (Math.abs(st.peek()) > Math.abs(i)) {
+                    currentDestroyed = true; // The current element 'i' is smaller, it gets destroyed.
+                    break; // Exit the while loop since 'i' is gone
+                } else {
+                    st.pop(); // Both have the same absolute value, remove both.
+                    currentDestroyed = true;
+                    break; // Exit the while loop since 'i' is gone
+                }
+            }
+
+            // If the current element 'i' wasn't destroyed in the clashes, add it to the stack
+            if (!currentDestroyed) {
+                st.push(i);
+            }
+        }
+
+        return new ArrayList<>(st);
+    }
+}
