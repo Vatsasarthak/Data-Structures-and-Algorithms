@@ -26,5 +26,3 @@ st.push(i);
         return sum;
 }
 }
-
-            res[i] = st.isEmpty() ? n : st.peek();
