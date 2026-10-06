@@ -3,7 +3,7 @@
 Platform: LeetCode  
 Difficulty: Medium  
 Language: Choose a type  
-Problem Link: https://leetcode.com/problems/sum-of-subarray-ranges/submissions/2163896767/  
+Problem Link: https://leetcode.com/problems/sum-of-subarray-ranges/submissions/2164495687/  
 Submitted At: 2026-10-06
 
 ---
