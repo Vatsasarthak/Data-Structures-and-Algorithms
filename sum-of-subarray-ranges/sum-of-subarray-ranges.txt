@@ -1,15 +1,30 @@
-class Solution {
-    public long subArrayRanges(int[] nums) {
-        long sum =0;
-        for(int i=0;i<nums.length;i++){
-            int largest =nums[i];
-            int smallest=nums[i];
-            for(int j=i+1;j<nums.length;j++){
-                largest=Math.max(largest ,nums[j]);
-                smallest=Math.min(smallest ,nums[j]);
-                sum = sum + (largest - smallest);
-            }
+st.push(i);
         }
+        return res;
+    }
+
+    public long sumSubarrayMaxs(int[] nums, int n) {
+        int[] nextGreaterLeft = getNGL(nums, n);
+        int[] nextGreaterRight = getNGR(nums, n);
+        long sum = 0;
+        
+        for (int i = 0; i < n; i++) {
+            long ls = i - nextGreaterLeft[i];
+            long rs = nextGreaterRight[i] - i;
+            
+            long totalways = ls * rs;
+            long totalsum = (long) nums[i] * totalways;
+            
+            sum = sum + totalsum;
+        }
+        
         return sum;
     }
+    public long subArrayRanges(int[] nums) {
+        int n=nums.length;
+        long sum =sumSubarrayMaxs(nums , n) - sumSubarrayMins(nums , n );
+        return sum;
 }
+}
+
+            res[i] = st.isEmpty() ? n : st.peek();
