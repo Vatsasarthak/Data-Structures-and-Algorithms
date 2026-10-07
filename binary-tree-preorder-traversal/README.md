@@ -3,8 +3,8 @@
 Platform: LeetCode  
 Difficulty: Easy  
 Language: Choose a type  
-Problem Link: https://leetcode.com/problems/binary-tree-preorder-traversal/submissions/2164746859/  
-Submitted At: 2026-10-06
+Problem Link: https://leetcode.com/problems/binary-tree-preorder-traversal/submissions/2164800562/  
+Submitted At: 2026-10-07
 
 ---
 
