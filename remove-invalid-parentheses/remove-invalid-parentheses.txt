@@ -1,0 +1,28 @@
+if (count < 0) {
+                for (int x = j; x <= k; x++) {
+                    if (s.charAt(x) == p[1] &&
+                            (x == j || s.charAt(x - 1) != p[1])) {
+                        remove(
+                                s.substring(0, x) + s.substring(x + 1),
+                                ans,
+                                k,
+
+                count--;
+                                x,
+                                p);
+                    }
+                }
+
+                return;
+            }
+        }
+
+        String rev = new StringBuilder(s).reverse().toString();
+
+        if (p[0] == '(') {
+            remove(rev, ans, 0, 0, new char[] { ')', '(' });
+        } else {
+            ans.add(rev);
+        }
+    }
+}
