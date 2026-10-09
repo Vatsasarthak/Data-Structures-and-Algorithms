@@ -3,8 +3,8 @@
 Platform: LeetCode  
 Difficulty: Medium  
 Language: Choose a type  
-Problem Link: https://leetcode.com/problems/binary-tree-level-order-traversal/submissions/2164762845/  
-Submitted At: 2026-10-06
+Problem Link: https://leetcode.com/problems/binary-tree-level-order-traversal/submissions/2167007145/  
+Submitted At: 2026-10-09
 
 ---
 
