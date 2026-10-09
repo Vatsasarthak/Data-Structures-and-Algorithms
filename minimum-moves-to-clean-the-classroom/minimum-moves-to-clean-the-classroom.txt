@@ -1,0 +1,31 @@
+int ne = cur.e - 1;
+
+                if (ne < 0)
+                    continue;
+
+                int nmask = cur.mask;
+
+                if (classroom[nr].charAt(nc) == 'R') {
+                    ne = energy;
+                }
+
+                if (classroom[nr].charAt(nc) == 'L') {
+                    nmask |= (1 << id[nr][nc]);
+                }
+
+                if (nmask == totalMask) {
+                    return cur.moves + 1;
+                }
+
+                if (ne <= best[nr][nc][nmask])
+                    continue;
+
+                best[nr][nc][nmask] = ne;
+
+                queue.offer(new State(nr, nc, nmask, ne, cur.moves + 1));
+            }
+        }
+
+        return -1;
+    }
+}
