@@ -3,7 +3,7 @@
 Platform: LeetCode  
 Difficulty: Easy  
 Language: Choose a type  
-Problem Link: https://leetcode.com/problems/contains-duplicate-ii/submissions/2170519898/  
+Problem Link: https://leetcode.com/problems/contains-duplicate-ii/submissions/2170520422/  
 Submitted At: 2026-10-12
 
 ---
