@@ -3,7 +3,7 @@
 Platform: LeetCode  
 Difficulty: Easy  
 Language: Choose a type  
-Problem Link: https://leetcode.com/problems/same-tree/submissions/2175389126/  
+Problem Link: https://leetcode.com/problems/same-tree/submissions/2175393950/  
 Submitted At: 2026-10-18
 
 ---
