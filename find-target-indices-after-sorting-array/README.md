@@ -3,7 +3,7 @@
 Platform: LeetCode  
 Difficulty: Easy  
 Language: Choose a type  
-Problem Link: https://leetcode.com/problems/find-target-indices-after-sorting-array/submissions/2175971561/?envType=daily-question&envId=2026-10-19  
+Problem Link: https://leetcode.com/problems/find-target-indices-after-sorting-array/submissions/2175971676/?envType=daily-question&envId=2026-10-19  
 Submitted At: 2026-10-19
 
 ---
