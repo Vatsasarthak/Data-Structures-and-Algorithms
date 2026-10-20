@@ -3,7 +3,7 @@
 Platform: LeetCode  
 Difficulty: Easy  
 Language: Choose a type  
-Problem Link: https://leetcode.com/problems/diameter-of-binary-tree/submissions/2176852688/  
+Problem Link: https://leetcode.com/problems/diameter-of-binary-tree/submissions/2176854689/  
 Submitted At: 2026-10-20
 
 ---
