@@ -2,7 +2,7 @@
 
 Platform: CodeChef  
 Difficulty: Practice  
-Language: java  
+Language: Go to Top  
 Problem Link: https://www.codechef.com/START261D/problems/EXSHAKE  
 Submitted At: 2026-10-21
 
