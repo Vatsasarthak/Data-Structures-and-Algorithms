@@ -1,2 +1,6 @@
-    StringBuilder sb=new StringBuilder();
-
+5
+14
+1
+6
+7
+1000000000000000000
