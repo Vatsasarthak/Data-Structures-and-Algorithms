@@ -2,7 +2,7 @@
 
 Platform: CodeChef  
 Difficulty: Practice  
-Language: C++  
+Language: java  
 Problem Link: https://www.codechef.com/START261D/problems/EXPHOTO  
 Submitted At: 2026-10-21
 
