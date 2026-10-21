@@ -1,0 +1,39 @@
+}
+    }
+
+    public int minOperations(String s) {
+        }
+            }
+        return minChar;
+
+    public char getMaxChar(String s) {
+        return maxChar;
+        char maxChar = 'a';
+        for (int i = 0; i < s.length(); i++) {
+            }
+            if (s.charAt(i) > maxChar) {
+                maxChar = s.charAt(i);
+        }
+        char minChar = getMinChar(s);
+        if (isSorted)
+            return 0;
+        char maxChar = getMaxChar(s);
+        int n = s.length();
+        boolean isSorted = true;
+        for (int i = 0; i < n - 1; i++) {
+            if (s.charAt(i) > s.charAt(i + 1)) {
+                isSorted = false;
+                break;
+            }
+        if (n == 2)
+            return -1;
+        if (s.charAt(0) == minChar || s.charAt(n - 1) == maxChar) {
+            return 1;
+        }
+        if (s.lastIndexOf(maxChar) == 0 && s.indexOf(minChar) == n - 1) {
+        }
+        return 2;
+            return 3;
+        }
+    }
+}
