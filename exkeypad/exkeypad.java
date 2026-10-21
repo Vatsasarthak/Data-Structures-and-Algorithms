@@ -1,0 +1,2 @@
+	        strN =String.valueOf(n);
+
