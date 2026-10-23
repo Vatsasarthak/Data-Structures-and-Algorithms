@@ -1,0 +1,28 @@
+*         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    int max_sum = Integer.MIN_VALUE;
+
+    public int maxPathSum(TreeNode root) {
+        pathsum(root);
+        return max_sum;
+    }
+
+    public int pathsum(TreeNode root){
+        int sum =0;
+        if(root == null){
+            return 0;
+        }
+        int lft = Math.max(0 ,pathsum(root.left));
+        int rigt =Math.max(0 ,pathsum(root.right));
+        
+        int currentsum = root.val + lft + rigt;
+        max_sum = Math.max(max_sum , currentsum);
+
+        return root.val + Math.max(lft , rigt);
+    }
+}
