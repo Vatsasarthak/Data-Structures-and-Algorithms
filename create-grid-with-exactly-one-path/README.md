@@ -3,8 +3,8 @@
 Platform: LeetCode  
 Difficulty: Easy  
 Language: Choose a type  
-Problem Link: https://leetcode.com/problems/create-grid-with-exactly-one-path/submissions/2044571212/  
-Submitted At: 2026-06-24
+Problem Link: https://leetcode.com/problems/create-grid-with-exactly-one-path/submissions/2182861587/?envType=daily-question&envId=2026-10-27  
+Submitted At: 2026-10-27
 
 ---
 
