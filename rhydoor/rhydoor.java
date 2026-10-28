@@ -1,0 +1,2 @@
+    if(!sc.hasNextInt()) return ;
+
