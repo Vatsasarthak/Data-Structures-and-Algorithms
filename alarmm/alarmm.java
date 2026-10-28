@@ -1,0 +1,2 @@
+        int k=sc.nextInt();
+
