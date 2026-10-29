@@ -1,0 +1,33 @@
+int mask = start[x];
+    int get(int x) {
+
+    }
+        x's subtree and cancels out after it
+            for (; i < fenwick.length; i += i & -i) fenwick[i] ^= d;
+        for (int i : new int[] {tree.tin[x] + 1, tree.tout[x] + 1})  // d starts at 
+    subtree
+    void flip(int x, int d) {  // XOR d into the root path of every node in x's 
+
+    }
+            if (x != tree.parent[x]) start[x] ^= start[tree.parent[x]];
+        fenwick = new int[bit.length + 1];
+        for (int x : tree.order)  // a parent comes before its children in DFS order
+        start = bit.clone();
+    RootPaths(Tree tree, int[] bit) {
+        this.tree = tree;
+
+    Fenwick tree over the Euler tour with the changes since the start
+    private final int[] start, fenwick;  // the masks for the initial letters, and a 
+    private final Tree tree;
+class RootPaths {  // get(x): XOR of the letter bits from the root down to x
+
+}
+    }
+        int k = 31 - Integer.numberOfLeadingZeros(r - l);
+        return order[Math.min(first[k][l + 1], first[k][r - (1 << k) + 1])];
+        int l = Math.min(tin[u], tin[v]), r = Math.max(tin[u], tin[v]);
+        if (u == v) return u;
+    nodes after u up to v
+    int lca(int u, int v) {  // the parent that comes first in DFS order among the 
+
+    }
