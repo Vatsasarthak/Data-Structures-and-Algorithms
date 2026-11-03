@@ -2,9 +2,9 @@
 
 Platform: CodeChef  
 Difficulty: Practice  
-Language: java  
+Language: C++  
 Problem Link: https://www.codechef.com/START262D/problems/XORQUADS  
-Submitted At: 2026-10-28
+Submitted At: 2026-11-03
 
 ---
 
