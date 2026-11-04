@@ -3,7 +3,7 @@
 Platform: LeetCode  
 Difficulty: Hard  
 Language: Choose a type  
-Problem Link: https://leetcode.com/problems/minimum-operations-to-make-elements-within-k-subarrays-equal/submissions/2189221107/?envType=daily-question&envId=2026-11-04  
+Problem Link: https://leetcode.com/problems/minimum-operations-to-make-elements-within-k-subarrays-equal/submissions/2189221266/?envType=daily-question&envId=2026-11-04  
 Submitted At: 2026-11-04
 
 ---
