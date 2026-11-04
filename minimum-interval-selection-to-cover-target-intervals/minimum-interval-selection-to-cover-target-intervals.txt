@@ -1,0 +1,31 @@
+List<int[]> tar = new ArrayList<>();
+        for (int[] t : ti) {
+            if (tar.isEmpty() || t[0] > tar.get(tar.size() - 1)[1]) {
+                tar.add(new int[]{t[0], t[1]});
+            } else {
+                int[] end = tar.get(tar.size() - 1);
+                end[1] = Math.max(end[1], t[1]);
+            }
+        }
+        // use line swip kind of someting 
+        int cnt = 0, i = 0;
+        int covered = -1; 
+        int n = ai.length; 
+        for (int[] t : tar) {
+            int l = t[0], r = t[1];
+            // extend 
+            while (covered < r) {
+                int start = Math.max(covered, l); // is l covered? 
+                int end = covered;
+                while (i < n && ai[i][0] <= start) {
+                    end = Math.max(end, ai[i][1]);
+                    i++;
+                }
+                if (end <= covered || end < l) return -1; 
+                covered = end;
+                cnt++;
+            }
+        }
+        return cnt;
+    }
+}
