@@ -1,0 +1,31 @@
+int next = minPrimes(idx+1, primes, target - primes.get(idx));
+
+            if(next != INF){
+                result = Math.min(result, 1 + next);
+            }
+        }
+
+        return dp[idx][target] = result;
+    }
+
+    private List<Integer> getPrimes(int n){
+        boolean []isPrime = new boolean[n+1];
+        Arrays.fill(isPrime, true);
+
+        for(int k=2; k*k<=n; k++){
+            if(isPrime[k]){
+                for(int i=k*k; i<=n; i+=k){
+                    isPrime[i] = false;
+                }
+            }
+        }
+
+        List<Integer> primes = new ArrayList<>();
+        for(int i=2; i<=n; i++){
+            if(isPrime[i]) primes.add(i);
+        }
+
+        return primes;
+
+    }
+}
