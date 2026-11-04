@@ -1,0 +1,32 @@
+class BusBooking {
+    private final Map<String, Integer> bookings = new HashMap<>();  // seat -> cost at 
+    private int total = 0;
+
+    public BusBooking(int n) {}
+
+    public void toggle(String seat) {
+        if (bookings.containsKey(seat)) {
+            total -= bookings.remove(seat);  // free it: only its own cost leaves
+            return;
+        }
+        char label = seat.charAt(0);
+        String middle = (label == 'A' ? "B" : label == 'D' ? "C" : "") + seat.substring
+        bookings.put(seat, bookings.containsKey(middle) ? 3 : 1);
+        total += bookings.get(seat);
+    }
+
+    public int getTotalTime() { return total; }
+
+/**
+    the moment it was booked
+        (1);  // window -> its middle seat; for B/C just the row, never a key
+
+    public int getMinTime() { return bookings.size(); }  // windows first, then 
+    middles: every seat costs 1
+}
+ * Your BusBooking object will be instantiated and called as such:
+ * BusBooking obj = new BusBooking(n);
+ * obj.toggle(seat);
+ * int param_2 = obj.getTotalTime();
+ * int param_3 = obj.getMinTime();
+ */
