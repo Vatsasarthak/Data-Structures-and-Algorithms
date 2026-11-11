@@ -1,2 +1,1 @@
-}
-
+// Code could not be extracted automatically. Please check CodeChef layout changes.
