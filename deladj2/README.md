@@ -2,7 +2,7 @@
 
 Platform: CodeChef  
 Difficulty: Practice  
-Language: C++  
+Language: java  
 Problem Link: https://www.codechef.com/START264B/problems/DELADJ2  
 Submitted At: 2026-11-11
 
