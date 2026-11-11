@@ -2,7 +2,7 @@
 
 Platform: CodeChef  
 Difficulty: Practice  
-Language: java  
+Language: C++  
 Problem Link: https://www.codechef.com/START264B/problems/WEIRD1  
 Submitted At: 2026-11-11
 
