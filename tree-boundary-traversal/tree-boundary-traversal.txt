@@ -1,0 +1,53 @@
+/* Node Structure
+class Node {
+    int data;
+    Node left, right;
+
+    Node(int val) {
+        data = val;
+        left = right = null;
+    }
+} */
+
+class Solution {
+    ArrayList<Integer> ans =new ArrayList<Integer>();
+    public ArrayList<Integer> boundaryTraversal(Node root) {
+        if(root == null) return ans;
+        if(!isleaf(root)) ans.add(root.data);
+        addleftboundary(root , ans);
+        addleaves(root , ans);
+        addrightboundary(root , ans);
+        return ans;
+    }
+    boolean isleaf(Node root){
+        return root.left == null && root.right == null;
+    }
+    void addleftboundary(Node root ,ArrayList<Integer> res){
+        Node cur = root.left;
+        while(cur != null){
+            if(!isleaf(cur)) res.add(cur.data);
+            if(cur.left != null) cur =cur.left;
+            else cur =cur.right;
+        }
+    }
+    void addrightboundary(Node root, ArrayList<Integer> res){
+        Node cur = root.right;
+        ArrayList<Integer> temp =new ArrayList<Integer>();
+        while(cur != null){
+            if(isleaf(cur) == false) temp.add(cur.data);
+            if(cur.right != null) cur = cur.right;
+            else cur = cur.left;
+        }
+        for(int i=temp.size() - 1;i>= 0;i--){
+            res.add(temp.get(i));
+        }
+    }
+    void addleaves(Node root,ArrayList<Integer> res){
+        if(isleaf(root)){
+            res.add(root.data);
+            return;
+        }
+        if(root.left != null)addleaves(root.left ,res);
+        if(root.right != null)addleaves(root.right , res);
+    }
+}
