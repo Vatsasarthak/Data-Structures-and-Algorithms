@@ -3,7 +3,7 @@
 Platform: LeetCode  
 Difficulty: Medium  
 Language: Java  
-Problem Link: https://leetcode.com/problems/maximize-score-after-zeroing-subtrees/  
+Problem Link: https://leetcode.com/problems/maximize-score-after-zeroing-subtrees/submissions/2197627091/  
 Submitted At: 2026-11-16
 
 ---
