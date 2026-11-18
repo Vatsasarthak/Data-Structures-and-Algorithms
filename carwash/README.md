@@ -2,7 +2,7 @@
 
 Platform: CodeChef  
 Difficulty: Practice  
-Language: C++  
+Language: Go to Top  
 Problem Link: https://www.codechef.com/START265B/problems/CARWASH  
 Submitted At: 2026-11-18
 
