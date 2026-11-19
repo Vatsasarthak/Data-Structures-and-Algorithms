@@ -3,7 +3,7 @@
 Platform: LeetCode  
 Difficulty: Medium  
 Language: Java  
-Problem Link: https://leetcode.com/problems/minimum-score-by-changing-two-elements/?envType=daily-question&envId=2026-11-19  
+Problem Link: https://leetcode.com/problems/minimum-score-by-changing-two-elements/submissions/2199090469/?envType=daily-question&envId=2026-11-19  
 Submitted At: 2026-11-19
 
 ---
