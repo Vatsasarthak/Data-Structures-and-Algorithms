@@ -1,7 +1,6 @@
 class Solution {
     public int minimizeSum(int[] nums) {
-        int[] small = new int[3], neg = new int[3];  // the 3 smallest values, and the 3 smallest negated ones: 
-        minus the 3 largest
+        int[] small = new int[3], neg = new int[3]; 
         Arrays.fill(small, Integer.MAX_VALUE);
         Arrays.fill(neg, Integer.MAX_VALUE);
         for (int x : nums) {
@@ -11,7 +10,7 @@ class Solution {
         return Math.min(-neg[0] - small[2], Math.min(-neg[1] - small[1], -neg[2] - small[0]));
     }
 
-    private void keep(int[] three, int x) {  // three: the 3 smallest values so far, ascending
+    private void keep(int[] three, int x) {  
         if (x >= three[2])
             return;
         int i = 2;
