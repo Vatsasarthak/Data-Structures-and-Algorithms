@@ -3,7 +3,7 @@
 Platform: LeetCode  
 Difficulty: Medium  
 Language: Java  
-Problem Link: https://leetcode.com/problems/find-subtree-sizes-after-changes/solutions/?envType=daily-question&envId=2026-11-21  
+Problem Link: https://leetcode.com/problems/find-subtree-sizes-after-changes/submissions/2200503693/?envType=daily-question&envId=2026-11-21  
 Submitted At: 2026-11-21
 
 ---
