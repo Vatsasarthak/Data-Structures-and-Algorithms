@@ -1,0 +1,75 @@
+# Minimum Cost to Delete Array
+
+Platform: LeetCode  
+Difficulty: Hard  
+Language: Java  
+Problem Link: https://leetcode.com/problems/minimum-cost-to-delete-array/submissions/2202006431/  
+Submitted At: 2026-11-23
+
+---
+
+## Description
+
+<p>You are given an integer array <code>nums</code>.</p>
+
+<p>In one operation, choose any <strong><span data-keyword="subarray-nonempty" class=" cursor-pointer relative text-dark-blue-s text-sm"></span></strong> of the current array with length <strong>at least two</strong> and delete it. The cost of this operation is the sum of the <strong>first and last</strong> elements of the chosen subarray.</p>
+
+<p>After each operation, the remaining elements are concatenated in their original order.</p>
+
+<p>Return the <strong>minimum</strong> total cost required to delete the <strong>entire</strong> array.</p>
+
+<p>&nbsp;</p>
+<p><span class="float-right -my-0.5 ml-2 inline-flex select-none items-center" data-example-lang-controls=""><span role="group" class="inline-flex h-6 items-center rounded-sd-md bg-sd-muted p-0.5" data-example-lang-toggle=""></span></span><strong class="example">Example 1:</strong></p>
+
+<div class="example-block">
+<p><strong>Input:</strong> <span class="example-io">nums = [2,-7,3,-5]</span></p>
+
+<p><strong>Output:</strong> <span class="example-io">-7</span></p>
+
+<p><strong>Explanation:</strong></p>
+
+<ul>
+	<li>Delete <code>[-7, 3]</code> with cost <code>-7 + 3 = -4</code>. The array becomes <code>[2, -5]</code>.</li>
+	<li>Delete <code>[2, -5]</code> with cost <code>2 + (-5) = -3</code>.</li>
+	<li>The total cost is <code>-4 + (-3) = -7</code>.</li>
+</ul>
+</div>
+
+<p><strong class="example">Example 2:</strong></p>
+
+<div class="example-block">
+<p><strong>Input:</strong> <span class="example-io">nums = [4,0,-5,2]</span></p>
+
+<p><strong>Output:</strong> <span class="example-io">1</span></p>
+
+<p><strong>Explanation:</strong></p>
+
+<ul>
+	<li>Delete <code>[0, -5]</code> with cost <code>0 + (-5) = -5</code>. The array becomes <code>[4, 2]</code>.</li>
+	<li>Delete <code>[4, 2]</code> with cost <code>4 + 2 = 6</code>.</li>
+	<li>The total cost is <code>-5 + 6 = 1</code>.</li>
+</ul>
+</div>
+
+<p><strong class="example">Example 3:</strong></p>
+
+<div class="example-block">
+<p><strong>Input:</strong> <span class="example-io">nums = [7,-8,1]</span></p>
+
+<p><strong>Output:</strong> <span class="example-io">8</span></p>
+
+<p><strong>Explanation:</strong></p>
+
+<ul>
+	<li>To delete the entire array, all three elements must be deleted in one operation. Deleting only two elements would leave one element, which cannot be deleted.</li>
+	<li>Deleting <code>[7, -8, 1]</code> costs <code>7 + 1 = 8</code>.</li>
+</ul>
+</div>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>2 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
+	<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
+</ul>
