@@ -1,15 +1,13 @@
-# LJAAS21
+# LJAAS07
 
 Platform: CodeChef  
-Difficulty: 420  
+Difficulty: Practice  
 Language: C++  
-Problem Link: https://www.codechef.com/practice/course/java/LPJAAS03/problems/LJAAS27  
-Submitted At: 2026-11-21
+Problem Link: https://www.codechef.com/skill-test/LJAAS1/problems/LJAAS27  
+Submitted At: 2026-11-24
 
 ---
 
 ## Description
 
-<div class="_problemStatementWrapper_bh3c4_33"><div class="_problemBodyContent_bh3c4_71"><h3 class="notranslate">MCQ - Variable Declaration </h3><p>What does the following code represent?</p>
-<pre class="language-java" tabindex="0"><code class="language-java"><span class="token keyword">int</span> age <span class="token operator">=</span> <span class="token number">25</span><span class="token punctuation">;</span>
-</code></pre><div></div></div></div>
+<div class="_problemStatementWrapper_bh3c4_33"><div class="_problemBodyContent_bh3c4_71"><p>How can you print the result of 6 divided by 2?</p><div></div></div></div>
